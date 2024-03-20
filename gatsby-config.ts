@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
     siteMetadata: {
         title: `Bona Portfolio`,
-        siteUrl: `https://www.yourdomain.tld`,
+        siteUrl: `https://bona-portfolio.netlify.app`,
         description: "신입 개발자 김보나의 포트폴리오 사이트 입니다.",
     },
     graphqlTypegen: true,

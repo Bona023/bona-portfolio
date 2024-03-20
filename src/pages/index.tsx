@@ -9,8 +9,8 @@ export default function Home({ data }: PageProps<Queries.DataQuery>) {
     const deployLogos = data.allFile.nodes.slice(2, 4);
     const frontLogos = data.allFile.nodes.slice(4);
     return (
-        <div className="bg-[#7C9D96] text-white">
-            <div className=" h-[30vh] text-center">
+        <div className="bg-[#7C9D96] text-white w-full">
+            <div className=" h-[35vh] text-center">
                 <h1 className="text-7xl pt-10 md:text-8xl font-extrabold">PORTFOLIO</h1>
                 <div className="bg-white h-px mx-8 my-6" />
                 <div className="flex justify-center items-center gap-8 text-lg font-bold">
@@ -41,9 +41,9 @@ export default function Home({ data }: PageProps<Queries.DataQuery>) {
                 </div>
             </div>
             <div className="flex flex-col md:flex-row">
-                <div className="bg-[#7C9D96] py-12 px-10 flex flex-col h-[70vh] font-semibold w-full md:w-1/2 items-start justify-center md:px-20">
+                <div className="bg-[#7C9D96] py-12 px-8 flex flex-col h-[70vh] font-semibold w-full md:w-1/2 items-start justify-center md:px-20">
                     <span className="text-5xl mb-4">안녕하세요.</span>
-                    <span className="text-4xl mb-3">신입 프론트엔드 개발자</span>
+                    <span className="text-3xl mb-3">신입 프론트엔드 개발자</span>
                     <span className="text-5xl">김보나 입니다.</span>
                 </div>
                 <div className="h-[70vh] py-12 px-10 w-full md:w-1/2  flex flex-col justify-center items-start md:px-20">
@@ -65,13 +65,13 @@ export default function Home({ data }: PageProps<Queries.DataQuery>) {
             <div className="bg-white h-px mx-8" />
             <div
                 id="about-me"
-                className="grid grid-cols-1 lg:grid-cols-3"
+                className="grid grid-cols-1 lg:grid-cols-2"
             >
-                <div className="h-[50vh] px-16 py-14">
+                <div className="h-[50vh] px-16 py-14 lg:row-span-2">
                     <h1 className="font-Great text-7xl ">About</h1>
                     <h1 className="font-Great text-7xl ">Me</h1>
                 </div>
-                <div className="h-[50vh] w-[480px] px-10 py-14 grid grid-cols-4">
+                <div className="h-[50vh] px-10 py-10 grid grid-cols-4 justify-center items-center">
                     <div className="w-24 h-10 text-2xl flex items-end font-semibold border-r-2 ">이름</div>
                     <div className="w-58 h-10 text-2xl flex items-end font-semibold col-span-3 px-2">김보나</div>
                     <div className="w-24 h-10 text-2xl flex items-end font-semibold border-r-2">Email</div>
@@ -87,7 +87,7 @@ export default function Home({ data }: PageProps<Queries.DataQuery>) {
                         </a>
                     </div>
                 </div>
-                <div className="h-[50vh] w-[480px] px-10 py-14 grid grid-cols-4">
+                <div className="h-[50vh] px-10 py-10 grid grid-cols-4 justify-center items-center">
                     <div className="w-24 h-10 text-2xl flex items-end font-semibold border-r-2 ">학력</div>
                     <div className="w-58 h-10 text-xl flex items-end font-semibold col-span-3 px-2">
                         <span>가톨릭대학교</span>
