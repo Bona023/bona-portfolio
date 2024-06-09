@@ -33,13 +33,6 @@ const config: GatsbyConfig = {
                 path: `${__dirname}/project-info/`,
             },
         },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `skill-img`,
-                path: `${__dirname}/skill-img/`,
-            },
-        },
     ],
 };
 

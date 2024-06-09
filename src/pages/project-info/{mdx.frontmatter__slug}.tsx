@@ -35,7 +35,7 @@ const MyLink = (props: any) => (
 );
 const MyImg = (props: any) => (
     <img
-        style={{ marginBottom: "20px" }}
+        style={{ margin: "10px", border: "1px solid black" }}
         {...props}
     />
 );
@@ -56,14 +56,31 @@ interface IProjectPostProps {
 
 export default function ProjectDetail({ children }: IProjectPostProps) {
     return (
-        <div className="bg-[#E9B384]">
-            <div className="px-10 py-14 max-w-screen-sm mx-auto">
-                <Link
-                    className="bg-[#A1CCD1] text-2xl font-bold px-6 py-3 rounded-md shadow-md hover:bg-[#7743DB] hover:text-white"
-                    to="/"
-                >
-                    Home
-                </Link>
+        <div className="bg-white">
+            <div className="px-10 py-14 max-w-screen-lg mx-auto">
+                <div className="flex justify-between">
+                    <Link to="/project">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            className="size-8 stroke-mainPink stroke-2"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5"
+                            />
+                        </svg>
+                    </Link>
+                    <Link
+                        className="bg-mainMint text-lg font-bold px-4 py-2 rounded-md shadow-lg drop-shadow-lg text-mainPurple"
+                        to="/"
+                    >
+                        Home
+                    </Link>
+                </div>
                 <div className="w-full h-10"></div>
                 <MDXProvider components={components}>{children}</MDXProvider>
             </div>
