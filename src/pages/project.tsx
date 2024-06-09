@@ -49,7 +49,7 @@ export default function ProjectPage() {
                         </div>
                     </div>
                     <div
-                        className={cls("h-[35vh] relative cardWrap cursor-pointer", bwitterClicked ? "wrapFlip" : "")}
+                        className={cls("h-[38vh] relative cardWrap cursor-pointer", bwitterClicked ? "wrapFlip" : "")}
                         onClick={() => bwitterActive()}
                     >
                         <div className="bg-mainMint projectCardFront">
@@ -76,7 +76,7 @@ export default function ProjectPage() {
                         </div>
                     </div>
                     <div
-                        className={cls("h-[35vh] relative cardWrap cursor-pointer", planerClicked ? "wrapFlip" : "")}
+                        className={cls("h-[38vh] relative cardWrap cursor-pointer", planerClicked ? "wrapFlip" : "")}
                         onClick={() => planerActive()}
                     >
                         <div className="bg-mainPink projectCardFront">
@@ -103,7 +103,7 @@ export default function ProjectPage() {
                         </div>
                     </div>
                     <div
-                        className={cls("h-[35vh] relative cardWrap cursor-pointer", campClicked ? "wrapFlip" : "")}
+                        className={cls("h-[38vh] relative cardWrap cursor-pointer", campClicked ? "wrapFlip" : "")}
                         onClick={() => campActive()}
                     >
                         <div className="bg-mainOrange projectCardFront">
